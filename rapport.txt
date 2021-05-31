@@ -1,0 +1,31 @@
+Inledning 
+
+Uppgiften bygger på att förstå och komplettera befintlig kod för att den skall fungera som önskat i webbläsaren. 
+Jag börjar med att kolla igenom koden, se vilka delar som redan finns, vilka kopplingar de har till html och 
+vilka funktioner som behöver kompletteras. 
+
+Del 1: Skapa HTML-element 
+
+Första funktionen som behöver kompletteras är en funktion som tar in två argument: title och description, och skall av 
+dessa skapa ett element i js. Uppbyggnaden av elementet är en <li> i grunden med en <article> i. 
+I <article> finns två element, en <header> och en <div>. Elementen skall ha bestämda klasser och variabler som textinnehåll. 
+Jag skapar mina olika element genom att göra variabler med const och sedan använda createElement metoden på dem.
+
+Jag skapar först grundelementet, en li. Denna skall inte ha någon klass och endast innehålla andra element. 
+Därefter skapar jag det article-element som skall vara i listan, och tilldelar det en klass mha className metoden. 
+Sedan skapar jag en header, tilldelar den två klasser och sätter dess textinnehåll (mha. innerText) till det första 
+argumentet för funktionen dvs title. 
+Sista elementet är en div, jag skapar den likt headern men sätter innehållet till det andra argumentet istället, description. 
+
+När jag har alla mina element klara skall jag bara sätta ihop dem. Article skall innehålla headern och diven. 
+Jag anväder mig av metoden appendChild och stoppar in headern och diven som barn till article. 
+Jag gör likadant med article som barn till li. 
+Nu är hela elementet med alla barn klart och jag returnerar det. 
+
+
+Del 2
+
+
+
+
+

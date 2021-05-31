@@ -331,7 +331,6 @@ const inputField = document.getElementById("search");
 
 // <ul> element to put search results in
 const resultsArea = document.getElementById("search-results");
-console.log(resultsArea);
 
 /*
 
@@ -374,7 +373,7 @@ function createResultElement(title, description) {
 //
 // This should return an array with all matching results.
 function findResult(query) {
-    const queryResult=RESULTS.filter(object=>object.title.includes(query) || object.description.includes(query));
+    const queryResult=RESULTS.filter(object=>object.title.toUpperCase().includes(query.toUpperCase()) || object.description.toUpperCase().includes(query.toUpperCase()));
     return queryResult;
 
 
