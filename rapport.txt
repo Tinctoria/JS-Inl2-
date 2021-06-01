@@ -23,7 +23,34 @@ Jag gör likadant med article som barn till li.
 Nu är hela elementet med alla barn klart och jag returnerar det. 
 
 
-Del 2
+Del 2: Genomsökning av array
+
+Andra delen är att komplettera funktionen som skall söka igenom vår array efter matchningar på det som är inskrivet i sökfältet. 
+Jag vill jämföra sökningen med både titel och description och sedan returnera en ny array med de resultaten. 
+
+Jag skapar en ny variabel för sökningsresultaten och använder den inbyggda filter metoden på den ursprungliga arrayen. 
+Jag gör två villkor på filtret och använder operatorn eller || för att det ska fungera både med description och title. 
+Sedan använder jag den inbyggda metoden includes för att kolla om de innehåller det jag skriver i sökfältet. 
+
+För att undvika skiftlägeskänsligheten så converterar jag både sökningsinputen och det som skall sökas igenom till stora bokstäver mha
+den inbyggda toUpperCase metoden. 
+
+Slutligen returnerar jag den nya filtrerade arrayen. 
+
+
+Del 3: Debugging
+
+När jag stött på problem så har jag dels använt mig av console.log() funktionen för att se olika element i consolen. 
+Jag har också använt det inbyggda debuggingverktyget i webbläsaren. Det gör jag i inspekt verktyget och fliken sources genom 
+att sätta breakpoints i koden och följa vad som händer när jag använder sidan. 
+Det går även att sätta breakpoints i koden i visual studio men det har jag inte gjort i detta fallet. 
+
+
+Slutsats: 
+
+Mycket av koden fanns redan på plats så uppgiften var att förstå tillgänglig kod och vad jag behövde få ut av de 
+funktioner som inte var färdigskrivna, sedan skriva klart dem. 
+
 
 
 
